@@ -22,37 +22,50 @@ O **ChatSignalR** é uma aplicação de chat em tempo real construída com **ASP
 
 1. **Clone o repositório:**
 
-      ```bash
-      git clone https://github.com/GeanVitorM/ChatSistemasDistribuidos.git
-      cd ChatSignalR
-Instale as dependências:
+    ```bash
+    git clone https://github.com/GeanVitorM/ChatSistemasDistribuidos.git
+    cd ChatSistemasDistribuidos
+    ```
 
-Certifique-se de que o .NET SDK está instalado na sua máquina:
+2. **Instale as dependências:**
 
-      ```bash
-         dotnet restore
-      ```
+    Certifique-se de que o .NET SDK está instalado na sua máquina:
 
-**Configure o ambiente**:
+    ```bash
+    dotnet restore
+    ```
 
-## Se necessário, configure as variáveis de ambiente ou altere as configurações no arquivo appsettings.json.
+3. **Configure o ambiente:**
 
-**Compile e execute o projeto:**
+    Se necessário, configure as variáveis de ambiente ou altere as configurações no arquivo `appsettings.json`.
 
-      ```bash
-      dotnet build
-      ```
-      dotnet run
-      ```
-**Acesse a aplicação:**
+4. **Compile e execute o projeto:**
 
-## A aplicação estará disponível em http://<SeuIPLocal>:5001. Utilize o endereço IP local da sua máquina para que outros dispositivos na rede possam acessar o chat.
+    ```bash
+    dotnet build
+    dotnet run
+    ```
+
+5. **Acesse a aplicação:**
+
+    A aplicação estará disponível em `http://<SeuIPLocal>:5001`. Utilize o endereço IP local da sua máquina para que outros dispositivos na rede possam acessar o chat.
 
 ## Como Funciona
--- **Chat em Tempo Real: Usuários podem enviar mensagens para todos os participantes ou diretamente para um usuário específico.**
--- **Armazenamento de Mensagens: O código está preparado para integrar com um banco de dados NoSQL para armazenar as mensagens, mas essa funcionalidade pode ser customizada conforme necessário.**
--- **Acesso Local: A aplicação está configurada para ser acessível a partir de qualquer dispositivo na rede local.**
--- **Estrutura do Projeto**
--- **ChatSignalR.Hubs/ChatHub.cs: Contém a lógica do Hub SignalR para gerenciar as conexões e mensagens do chat.**
--- **Startup.cs: Configura os serviços necessários, incluindo SignalR.**
--- **Program.cs: Configura o servidor para ouvir em todas as interfaces de rede.**
+
+- **Chat em Tempo Real**: Usuários podem enviar mensagens para todos os participantes ou diretamente para um usuário específico.
+- **Armazenamento de Mensagens**: O código está preparado para integrar com um banco de dados NoSQL para armazenar as mensagens, mas essa funcionalidade pode ser customizada conforme necessário.
+- **Acesso Local**: A aplicação está configurada para ser acessível a partir de qualquer dispositivo na rede local.
+
+## Estrutura do Projeto
+
+- **`ChatSignalR.Hubs/ChatHub.cs`**: Contém a lógica do Hub SignalR para gerenciar as conexões e mensagens do chat.
+- **`Startup.cs`**: Configura os serviços necessários, incluindo SignalR.
+- **`Program.cs`**: Configura o servidor para ouvir em todas as interfaces de rede.
+
+## Contribuição
+
+Se você encontrar bugs ou quiser contribuir com melhorias, fique à vontade para abrir uma issue ou enviar um pull request.
+
+## Licença
+
+Este projeto é distribuído sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
