@@ -22,17 +22,16 @@ O **ChatSignalR** é uma aplicação de chat em tempo real construída com **ASP
 
 1. **Clone o repositório:**
 
-   ```bash
-   git clone https://github.com/SeuUsuario/ChatSignalR.git
-   cd ChatSignalR
+      ```bash
+      git clone https://github.com/GeanVitorM/ChatSistemasDistribuidos.git
+      cd ChatSignalR
 Instale as dependências:
 
 Certifique-se de que o .NET SDK está instalado na sua máquina:
 
-   ```bash
-      Copiar código
-   ```
-      dotnet restore
+      ```bash
+         dotnet restore
+      ```
 
 **Configure o ambiente**:
 
@@ -40,10 +39,11 @@ Certifique-se de que o .NET SDK está instalado na sua máquina:
 
 **Compile e execute o projeto:**
 
-   ```bash
-   dotnet build
-   dotnet run
-   ```
+      ```bash
+      dotnet build
+      ```
+      dotnet run
+      ```
 **Acesse a aplicação:**
 
 ## A aplicação estará disponível em http://<SeuIPLocal>:5001. Utilize o endereço IP local da sua máquina para que outros dispositivos na rede possam acessar o chat.
